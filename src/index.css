@@ -1,13 +1,184 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.none {
+  display: none;
+}
+.chon {
+  border: 3px solid palevioletred;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  align-items: center;
+  margin: 0 auto;
+}
+.nguoimau {
+  width: 500px;
+  position: relative;
+}
+.nguoimau img {
+  width: 100%;
+}
+.nguoimau .kinh {
+  width: 270px;
+  height: 60px;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nguoimau .nen {
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  background-color: rgba(216, 112, 147, 0.618);
+}
+.nguoimau .nen h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.nguoimau .nen p {
+  color: brown;
+}
+.nguoimau .nen #price {
+  margin: 10px 0;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+}
+.main .glasses {
+  width: 50%;
+}
+.main .glasses .item {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.main .glasses .item img {
+  width: 100%;
+}
+.main .glasses button {
+  color: white;
+  background-color: palevioletred;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s;
+}
+.main .glasses button:hover {
+  color: black;
+  background-color: brown;
+}
+@media only screen and (max-width: 852px) {
+  .main {
+    margin: 10px auto;
+    flex-direction: column;
+  }
+
+  .main .glasses {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .nguoiMau .kinh img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+  .nguoiMau .nen {
+    padding: 0 10px;
+  }
+  .nguoiMau .nen h3 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  .nguoiMau .nen p {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  .main .glasses .item {
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main {
+    margin: 10px auto;
+    flex-direction: column;
+  }
+  .nguoiMau {
+    width: 400px;
+    position: relative;
+  }
+  .main .glasses {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  .nguoiMau .glasses {
+    /* width: 230px;
+      height: 60px;
+      position: absolute;
+      top: 130px;
+      left: 50%; */
+    transform: translateX(-50%);
+  }
+  .nguoiMau .glasses img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+  .nguoiMau .nen {
+    padding: 0 10px;
+  }
+  .nguoiMau .nen h3 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  .nguoiMau .nen p {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  .main .glasses .item {
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 854px) and (max-width: 900px) {
+  .nguoimau .kinh {
+    position: absolute;
+    top: 142px;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 992px) {
+  .nguoimau .kinh {
+    position: absolute;
+    top: 147px;
+  }
 }
