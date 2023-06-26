@@ -4,181 +4,76 @@
   box-sizing: border-box;
 }
 
-.none {
-  display: none;
-}
-.chon {
-  border: 3px solid palevioletred;
+.body {
+  background-color: #f5f9fe;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
+.header {
+  background-color: grey;
 }
-.main {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1140px;
-  align-items: center;
-  margin: 0 auto;
+
+.navbar .navbar-brand {
+  color: #0d369f;
+  font-size: 30px;
 }
-.nguoimau {
-  width: 500px;
-  position: relative;
-}
-.nguoimau img {
-  width: 100%;
-}
-.nguoimau .kinh {
-  width: 270px;
-  height: 60px;
-  position: absolute;
-  top: 160px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.nguoimau .nen {
-  padding: 20px;
-  position: absolute;
-  left: 0;
-  bottom: 5px;
-  width: 100%;
-  background-color: rgba(216, 112, 147, 0.618);
-}
-.nguoimau .nen h3 {
-  font-weight: bold;
-  font-size: 18px;
-}
-.nguoimau .nen p {
-  color: brown;
-}
-.nguoimau .nen #price {
-  margin: 10px 0;
-}
-.content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 20px;
-}
-.main .glasses {
-  width: 50%;
-}
-.main .glasses .item {
-  width: 160px;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-radius: 12px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.main .glasses .item img {
-  width: 100%;
-}
-.main .glasses button {
+.navbar .nav-item .nav-link {
   color: white;
-  background-color: palevioletred;
-  padding: 15px 20px;
-  border-radius: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  border: none;
+}
+h1 {
+  color: red;
+  margin: 50px 0;
+  text-align: center;
+}
+.ProductList {
+  margin: 30px 0;
+}
+.ProductList .product__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.ProductList .product__content .product_item {
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.ProductList .product__content .product_item img {
+  width: 100%;
+  box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+  border-radius: 8px;
+}
+.ProductList .product__content .product_item .product_text {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ProductList .product__content .product_item button {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #0d369f;
+  font-size: 17px;
+  border-radius: 30px;
   transition: all 0.5s;
+  border: none;
+  cursor: pointer;
 }
-.main .glasses button:hover {
-  color: black;
-  background-color: brown;
+.ProductList .product__content .product_item button:hover {
+  color: red;
 }
-@media only screen and (max-width: 852px) {
-  .main {
-    margin: 10px auto;
-    flex-direction: column;
-  }
 
-  .main .glasses {
-    width: 400px;
-    margin-bottom: 20px;
-  }
-
-  .nguoiMau .kinh img {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
-  .nguoiMau .nen {
-    padding: 0 10px;
-  }
-  .nguoiMau .nen h3 {
-    font-size: 16px;
-    margin: 5px 0;
-  }
-  .nguoiMau .nen p {
-    font-size: 12px;
-    margin: 5px 0;
-  }
-
-  .main .glasses .item {
-    height: 100px;
-  }
+.shoes_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
 }
-@media only screen and (max-width: 576px) {
-  .main {
-    margin: 10px auto;
-    flex-direction: column;
-  }
-  .nguoiMau {
-    width: 400px;
-    position: relative;
-  }
-  .main .glasses {
-    width: 400px;
-    margin-bottom: 20px;
-  }
-  .nguoiMau .glasses {
-    /* width: 230px;
-      height: 60px;
-      position: absolute;
-      top: 130px;
-      left: 50%; */
-    transform: translateX(-50%);
-  }
-  .nguoiMau .glasses img {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
-  .nguoiMau .nen {
-    padding: 0 10px;
-  }
-  .nguoiMau .nen h3 {
-    font-size: 16px;
-    margin: 5px 0;
-  }
-  .nguoiMau .nen p {
-    font-size: 12px;
-    margin: 5px 0;
-  }
-
-  .main .glasses .item {
-    height: 100px;
-  }
-}
-@media only screen and (min-width: 854px) and (max-width: 900px) {
-  .nguoimau .kinh {
-    position: absolute;
-    top: 142px;
-  }
-}
-@media only screen and (min-width: 901px) and (max-width: 992px) {
-  .nguoimau .kinh {
-    position: absolute;
-    top: 147px;
-  }
+#exampleModal .modal-header img {
+  width: 400px;
+  margin-left: 30px;
 }

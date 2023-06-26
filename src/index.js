@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import GlassesState from "./GlassesState/GlassesState";
+import ListShoes from "./ListShoes/ListShoes";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    <GlassesState />
+    <ListShoes />
   </>
 );
 
